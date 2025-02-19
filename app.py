@@ -23,10 +23,10 @@ col1, col2 = st.columns(2)
 
 with col1:
     age = st.number_input("🧑 Age", min_value=1, max_value=100, step=1)
-    bmi = st.number_input("⚖️ BMI (Body Mass Index)", min_value=10.0, max_value=50.0, step=0.01)
-    alcohol = st.slider("🍺 Alcohol Consumption", min_value=0, max_value=20, step=0.01)
+    bmi = st.number_input("⚖️ BMI (Body Mass Index)", min_value=10.00, max_value=50.00, step=0.01)
+    alcohol = st.slider("🍺 Alcohol Consumption", min_value=0.00, max_value=20.00, step=0.01)
     smoking = st.selectbox("🚬 Smoking Habit", ["No", "Yes"])
-    physical_activity = st.slider("🏃 Physical Activity", min_value=0, max_value=20, step=0.01)
+    physical_activity = st.slider("🏃 Physical Activity", min_value=0.00, max_value=20.00, step=0.01)
 
 with col2:
     gender = st.selectbox("⚤ Gender", ["Male", "Female"])
